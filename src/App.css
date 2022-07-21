@@ -1,0 +1,51 @@
+.App {
+  font-family: Roboto;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.btn{
+  border: 1px solid;
+  border-bottom: 3px black solid;
+  border-radius: 4px;
+
+}
+.btn:active{
+  border-bottom: 0px;
+}
+.input{
+  margin-right: 5px;
+}
+a,li{
+  list-style: none;
+  text-decoration: none;
+}
+.nav-active{
+  color:black;
+}
+.nav-inactive{
+  color: aliceblue;
+}
+.subs{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.load{
+  z-index: 1000;
+ 
+}
+
+
+
+
