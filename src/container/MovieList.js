@@ -12,7 +12,7 @@ const MovieList = ()=>{
     //data dari ../data/movies.json
 
 const [movies,setmovies] = useState([]);
-const Key = process.env.IMDB_KEY;
+const Key = process.env.REACT_APP_IMDB_KEY;
 const URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${Key}`
 const SrcURL = `https://api.themoviedb.org/3/search/movie?api_key=${Key}=`
 const [Search, setSearch] = useState('');
