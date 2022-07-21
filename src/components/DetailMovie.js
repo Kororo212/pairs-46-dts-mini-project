@@ -86,7 +86,7 @@ useEffect(()=>{
            
            
            }}>
-               <h3>Synopsys:</h3>
+               <h3>Synopsis:</h3>
                <p>{movie.overview}</p>
            </Box>
            <Box sx={{
