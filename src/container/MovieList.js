@@ -14,7 +14,7 @@ const MovieList = ()=>{
 const [movies,setmovies] = useState([]);
 const Key = process.env.REACT_APP_IMDB_KEY;
 const URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${Key}`
-const SrcURL = `https://api.themoviedb.org/3/search/movie?api_key=${Key}=`
+const SrcURL = `https://api.themoviedb.org/3/search/movie?api_key=${Key}&query=`
 const [Search, setSearch] = useState('');
 const [loading,setLoading] = useState(true);
 const [dataNotFound,setdataNotFound] = useState(true);
