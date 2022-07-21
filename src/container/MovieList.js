@@ -12,8 +12,9 @@ const MovieList = ()=>{
     //data dari ../data/movies.json
 
 const [movies,setmovies] = useState([]);
-const URL = "https://api.themoviedb.org/3/trending/movie/day?api_key=844c872feee1c2892d10199ce6c7fa4d"
-const SrcURL = "https://api.themoviedb.org/3/search/movie?api_key=844c872feee1c2892d10199ce6c7fa4d&query="
+const Key = process.env.IMDB_KEY;
+const URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${Key}`
+const SrcURL = `https://api.themoviedb.org/3/search/movie?api_key=${Key}&query=`
 const [Search, setSearch] = useState('');
 const [loading,setLoading] = useState(true);
 const [dataNotFound,setdataNotFound] = useState(true);
