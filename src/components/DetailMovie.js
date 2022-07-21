@@ -13,7 +13,8 @@ const DetailMovie = ()=>{
 let params = useParams();
 const YT = 'https://www.youtube.com/embed/';
 const URL = "https://api.themoviedb.org/3/movie/";
-const KEY = "?api_key=844c872feee1c2892d10199ce6c7fa4d";
+const Key_API = process.env.REACT_APP_IMDB_KEY;
+const KEY = `?api_key=${Key_API}`;
 const BaseImageUrl = "https://image.tmdb.org/t/p/original";
 const Detail = "&append_to_response=videos";
 const [movie,setMovie] = useState([]);
@@ -39,9 +40,10 @@ useEffect(()=>{
             setGenres(dataMovie.genres)
            const mov= dataMovie.videos.results;
            const movie = mov.filter((data)=>data.type === "Trailer")[0];
-     
+           console.log(movie)
            const trailer = YT+movie.key;
            setTrailer(trailer)
+           
            if(dataMovie.backdrop_path === null){
             setBackdrop(dataMovie.poster_path)
         
