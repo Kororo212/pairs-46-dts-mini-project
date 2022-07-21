@@ -8,8 +8,8 @@ import Loading from '../components/Loading';
 
 const Indo =()=>{
     const [movies,setMovies] = useState([]);
-    const Key = process.env.IMDB_KEY;
-    const URL = `https://api.themoviedb.org/3/discover/movie?api_key=${Key}&with_original_language=id`;
+   
+    const URL = `https://api.themoviedb.org/3/discover/movie?api_key=844c872feee1c2892d10199ce6c7fa4d&with_original_language=id`;
     const [loading,setLoading] = useState(true);
     const fetchData = async()=>{
         setLoading(true)
