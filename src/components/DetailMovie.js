@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { useState,useEffect} from "react";
 import CardMedia from "@mui/material/CardMedia";
 import {Button} from "@mui/material";
-import Loading from "./Loading";
+
 
 
 
